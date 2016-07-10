@@ -10,15 +10,13 @@
   <meta name="description" content="">
   <title>Відкрите Серце Кіровоград</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
-    <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="assets/animate.css/animate.min.css">
+  <link rel="stylesheet" href="assets/mobirise/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+      <%= csrf_meta_tags %>
 <!-- Styles -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 <!-- END Styles -->  
-    <!-- JAVASCRIPT -->
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    
-    <!-- END JAVASCRIPT -->
-  </head>
   
   
   
@@ -404,5 +402,21 @@ Email: support@domain.com<br>
     </div>
 </footer>
 
+
+ 
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="assets/smooth-scroll/SmoothScroll.js"></script>
+  <script src="assets/jquery-mb-ytplayer/jquery.mb.YTPlayer.min.js"></script>
+  <script src="assets/jarallax/jarallax.js"></script>
+  <!--[if lte IE 9]>
+    <script src="assets/jquery-placeholder/jquery.placeholder.min.js"></script>
+  <![endif]-->
+      <!-- JAVASCRIPT -->
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <!-- END JAVASCRIPT -->
+  <script src="assets/mobirise/js/script.js"></script>
+  
+  
 </body>
 </html>
