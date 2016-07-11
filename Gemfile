@@ -17,6 +17,7 @@ gem 'remotipart', github: 'mshibuya/remotipart', ref: '3a6acb3'
 gem 'refile', github: 'refile/refile', require: 'refile/rails'
 gem 'refile-mini_magick', github: 'refile/refile-mini_magick'
 gem 'sinatra', github: 'sinatra/sinatra', branch: 'master'
+gem 'mail_form'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
