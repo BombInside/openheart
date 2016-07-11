@@ -1,11 +1,13 @@
 class PostsController < ApplicationController
     before_action :find_post, only: [:show, :edit, :update, :destroy]
     def index
-        
+        @posts = Post.all
+       # render :json => @posts.collect { |p| p.to_jq_upload }.to_json
     end
     
     def new
         @post = Post.new
+        Bootsy::ImageGallery.where('created_at < ?', 1.hour.ago).destroy_all
     end
     
     def create
@@ -40,7 +42,7 @@ class PostsController < ApplicationController
     
     private
     def post_params
-        params.require(:post).permit(:title, :content)
+        params.require(:post).permit(:title, :content, :bootsy_image_gallery_id, images_files: [])
     end
     
     def find_post
