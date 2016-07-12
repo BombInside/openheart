@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/galetahub/ckeditor.git
+  revision: 93c1b19ddb745c5bcad3a239438c229fab0b6e57
+  specs:
+    ckeditor (4.1.6)
+      cocaine
+      orm_adapter (~> 0.5.0)
+
+GIT
   remote: git://github.com/mshibuya/remotipart.git
   revision: 3a6acb36d46d6769faba6bd94ed7f831321f6c6a
   ref: 3a6acb3
@@ -95,6 +103,10 @@ GEM
       json (>= 1.7)
       mime-types (>= 1.16)
       mimemagic (>= 0.3.0)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.8)
+      climate_control (>= 0.0.3, < 1.0)
     coderay (1.1.1)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
@@ -154,6 +166,7 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
+    orm_adapter (0.5.0)
     pg (0.18.4)
     pkg-config (1.1.7)
     puma (3.4.0)
@@ -244,6 +257,7 @@ DEPENDENCIES
   bootsy
   byebug
   carrierwave
+  ckeditor!
   coffee-rails (~> 4.2)
   dragonfly (~> 1.0.12)
   jbuilder (~> 2.5)

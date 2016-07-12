@@ -42,7 +42,7 @@ class PostsController < ApplicationController
     
     private
     def post_params
-        params.require(:post).permit(:title, :content, :bootsy_image_gallery_id, images_files: [])
+        params.require(:post).permit(:title, :content, :decsription, :bootsy_image_gallery_id, images_files: [])
     end
     
     def find_post

@@ -14,7 +14,7 @@
             <div class="mbr-section__col col-xs-12 col-lg-2 col-md-4 col-sm-6">
                 <div class="mbr-section__container mbr-section__container--center mbr-section__container--middle">
                     <figure class="mbr-figure">
-                        <%= attachment_image_tag(post.images.first, :file, :fill, 450, 450, class: "mbr-figure__img", format: "png") %>
+                        <%= attachment_image_tag(post.images.first, :file, :fill, 450, 450, class: "mbr-figure__img", format: "png", style: "border-radius: 1em;") %>
                         
                     </figure>
                 </div>
@@ -25,7 +25,7 @@
                 </div>
                 <div class="mbr-section__container mbr-section__container--last" style="padding-bottom: 93px;">
                     <div class="mbr-article mbr-article--wysiwyg">
-                        <p><%= truncate(post.content, :length => 162) %></p>
+                        <p><%= truncate(post.content, :length => 162).html_safe %></p>
                     </div>
                 </div>
                 

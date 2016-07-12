@@ -15,8 +15,14 @@
     <%= f.text_field :title, required: true %> <br>
     <br>
     <br>
+    <%= f.label :decsription, "Тект Вашей новости здесь!" %> <br>
+    <%= f.cktext_area :decsription, required: true, :ckeditor => {:uiColor => '#85cdd9', :toolbar => 'full'} %>
+        <br>
+    <br>    
+    <br>
+    <br>
     <%= f.label :content, "Тест Вашей новости здесь!" %> <br>
-    <%= f.text_area :content, required: true %>
+    <%= f.cktext_area :content, required: true, :ckeditor => {:uiColor => '#85cdd9', :toolbar => 'full'} %>
         <br>
     <br>
     

@@ -1,5 +1,5 @@
 <%= @post.title %> <br>
-<%= @post.content %> <br>
+<%= @post.content.html_safe %> <br>
 <br>
   <% @post.images.each do |i| %>
     <%= attachment_image_tag(i, :file, :fill, 350, 350, format: "png") %>

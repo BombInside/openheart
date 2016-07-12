@@ -18,3 +18,4 @@
 //= require jquery.fileupload
 //= require bootstrap-sprockets
 //= require bootsy
+//= require ckeditor/init
